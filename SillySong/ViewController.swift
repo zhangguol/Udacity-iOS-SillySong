@@ -10,16 +10,33 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var nameField: UITextField!
+    @IBOutlet weak var lyricsView: UITextView!
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        nameField.delegate = self
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func reset(_ sender: UITextField) {
+        nameField.text = ""
+        lyricsView.text = ""
     }
-
-
+    
+    @IBAction func displayLyrics(_ sender: UITextField) {
+        guard let fullName = sender.text, !fullName.isEmpty else {
+            lyricsView.text = ""
+            return
+        }
+        
+        lyricsView.text = LyricsGenerator.shared.lyrics(for: fullName)
+    }
 }
 
+extension ViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return false
+    }
+}

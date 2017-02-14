@@ -12,7 +12,9 @@
 		B229EB221E52B90E0086600E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B229EB201E52B90E0086600E /* Main.storyboard */; };
 		B229EB241E52B90E0086600E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B229EB231E52B90E0086600E /* Assets.xcassets */; };
 		B229EB271E52B90E0086600E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B229EB251E52B90E0086600E /* LaunchScreen.storyboard */; };
-		B229EB321E52B90E0086600E /* SillySongTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B229EB311E52B90E0086600E /* SillySongTests.swift */; };
+		B229EB3D1E52BC300086600E /* LyricsGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B229EB3C1E52BC300086600E /* LyricsGenerator.swift */; };
+		B229EB3F1E52C3200086600E /* LyricsGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B229EB3E1E52C3200086600E /* LyricsGeneratorTests.swift */; };
+		B229EB411E52C65F0086600E /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B229EB401E52C65F0086600E /* ViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +36,10 @@
 		B229EB261E52B90E0086600E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B229EB281E52B90E0086600E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B229EB2D1E52B90E0086600E /* SillySongTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SillySongTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B229EB311E52B90E0086600E /* SillySongTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SillySongTests.swift; sourceTree = "<group>"; };
 		B229EB331E52B90E0086600E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B229EB3C1E52BC300086600E /* LyricsGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LyricsGenerator.swift; sourceTree = "<group>"; };
+		B229EB3E1E52C3200086600E /* LyricsGeneratorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LyricsGeneratorTests.swift; sourceTree = "<group>"; };
+		B229EB401E52C65F0086600E /* ViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 			children = (
 				B229EB1C1E52B90E0086600E /* AppDelegate.swift */,
 				B229EB1E1E52B90E0086600E /* ViewController.swift */,
+				B229EB3C1E52BC300086600E /* LyricsGenerator.swift */,
 				B229EB201E52B90E0086600E /* Main.storyboard */,
 				B229EB231E52B90E0086600E /* Assets.xcassets */,
 				B229EB251E52B90E0086600E /* LaunchScreen.storyboard */,
@@ -90,7 +95,8 @@
 		B229EB301E52B90E0086600E /* SillySongTests */ = {
 			isa = PBXGroup;
 			children = (
-				B229EB311E52B90E0086600E /* SillySongTests.swift */,
+				B229EB3E1E52C3200086600E /* LyricsGeneratorTests.swift */,
+				B229EB401E52C65F0086600E /* ViewControllerTests.swift */,
 				B229EB331E52B90E0086600E /* Info.plist */,
 			);
 			path = SillySongTests;
@@ -202,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B229EB1F1E52B90E0086600E /* ViewController.swift in Sources */,
+				B229EB3D1E52BC300086600E /* LyricsGenerator.swift in Sources */,
 				B229EB1D1E52B90E0086600E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,7 +217,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B229EB321E52B90E0086600E /* SillySongTests.swift in Sources */,
+				B229EB411E52C65F0086600E /* ViewControllerTests.swift in Sources */,
+				B229EB3F1E52C3200086600E /* LyricsGeneratorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
